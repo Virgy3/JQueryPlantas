@@ -1,0 +1,110 @@
+#titulo{
+    text-align: center;         /* Alinea el texto al centro */
+    font-family: Georgia;       /* Define la fuente del texto */
+    font-weight: bold;          /* Establece el grosor de la fuente como negrita */
+    text-decoration: underline black;  /* Subraya el texto con una línea negra */
+    background-color: #A9CCE3;  /* Establece el color de fondo */
+}
+
+#container {
+    float: center;              /* Centra el contenedor */
+    max-width: 1000px;          /* Establece el ancho máximo del contenedor */
+    margin: 0 auto;             /* Centra el contenedor horizontalmente */
+}
+
+#container2 {
+    float: right;               /* Mueve el contenedor a la derecha */
+    position: fixed;            /* Fija la posición del contenedor en la ventana */
+    z-index: 50;                /* Establece la posición en la que se superpone a otros elementos */
+    top: 30%;                   /* Posiciona el contenedor en un 30% desde la parte superior */
+    left: 70%;                  /* Posiciona el contenedor en un 70% desde la parte izquierda */
+}
+
+#alinea{
+    color: black;               /* Establece el color del texto del desplegable */
+    background-color: #D6EAF8;  /* Establece el color de fondo del desplegable */
+}
+
+#invernadero {
+    width: 850px;               /* Establece el ancho del invernadero */
+    height: 720px;              /* Establece la altura del invernadero */
+    background-color: #c0deb9;  /* Establece el color de fondo del invernadero */
+    position: relative;         /* Establece el posicionamiento relativo para elementos hijos */
+    overflow: hidden;           /* Oculta el contenido que desborda el invernadero */
+}
+
+body {
+    background-image: url(img/vivero.jpg);   /* Establece la imagen de fondo del body */
+    background-size: cover;                   /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;              /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;             /* Evita que la imagen se repita */
+}
+
+.planta img {
+    float: left;                /* Hace que las imágenes de las plantas se mantengan a la izquierda */
+    width: 80px;                /* Establece el ancho de las imágenes de las plantas */
+    height: 80px;               /* Establece la altura de las imágenes de las plantas */
+    position: relative;         /* Establece el posicionamiento relativo para elementos hijos */
+    margin-top: 530px;          /* Establece el margen superior de las imágenes */
+    margin-left: 10px;          /* Establece el margen izquierdo de las imágenes */
+    margin-right: 10px;         /* Establece el margen derecho de las imágenes */
+    padding: 20px;              /* Establece el relleno de las imágenes */
+}
+
+button {
+    font-size: 20px;            /* Establece el tamaño de fuente para los botones */
+    line-height: 30px;          /* Establece la altura de línea para los botones */
+    text-align: center;         /* Alinea el texto de los botones al centro */
+    width: 100px;               /* Establece el ancho de los botones */
+    height: 50px;               /* Establece la altura de los botones */
+    background: yellow;         /* Establece el color de fondo de los botones */
+}
+
+#boton1{
+    float: right;               /* Hace que el botón flote a la derecha */
+    top: 40px;                  /* Establece la posición superior*/
+    position: absolute;         /* Establece la posición absoluta*/
+}
+
+#boton2{
+    float: right;               /* Hace que el botón flote a la derecha */
+    top: 100px;                 /* Establece la posición superior*/
+    position: absolute;         /* Establece la posición absoluta*/
+    display: none;              /* Inicialmente oculta el botón 2 */
+}
+
+h3 {
+    color: black;               /* Establece el color del texto del encabezado h3 */
+    font-family: Verdana;        /* Establece la fuente del texto del encabezado h3 */
+    background-color: #F5CBA7;  /* Establece el color de fondo del encabezado h3 */
+}
+
+#tabla-container {
+    float: right;               /* Hace que el contenedor de la tabla flote a la derecha */
+    position: fixed;            /* Fija la posición del contenedor en la ventana */
+    z-index: 50;                /* Establece la posición en la que se superpone a otros elementos */
+    top: 48%;                   /* Posiciona el contenedor en un 48% desde la parte superior */
+    left: 72%;                  /* Posiciona el contenedor en un 72% desde la parte izquierda */
+}
+
+#tabla {
+    visibility: hidden;         /* Inicialmente oculta la tabla */
+    border-collapse: collapse;  /* Colapsa los bordes de la tabla */
+    margin: auto;               /* Centra la tabla horizontalmente */
+}
+
+#tabla th,
+#tabla td {
+    border: 1px solid #ddd;     /* Establece el estilo del borde de las celdas de la tabla */
+    padding: 8px;               /* Establece el relleno de las celdas de la tabla */
+}
+
+#tabla th {
+    background-color: #c0deb9;  /* Establece el color de fondo del encabezado de la tabla */
+}
+
+#tabla td {
+    text-align: center;         /* Alinea el texto en el centro de las celdas de la tabla */
+    background-color: white;    /* Establece el color de fondo de las celdas de la tabla */
+}
+

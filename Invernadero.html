@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Crecimiento de Plantas</title>
+    <link rel="stylesheet" type="text/css" href="Invernadero.css"> <!--Enlace que hace referencia a donde está el CSS-->
+</head>
+
+<body>
+    <div id="container"> <!--Contenedor de plantas-->
+        <h1 id="titulo">"Simulador de Invernadero Virtual"</h1>
+
+        <div id="invernadero"> <!--Hace referencia a un cuadrado que ubica las plantas-->
+		
+		<br><br><hr size="7px" color="green"/> <!--Linea de meta de las plantas-->
+	
+            <div class="planta" id="planta1"> <img src="img/flor1.png" alt="Planta 1"></div> <!--Referencia a las 6 plantas y su-->
+            <div class="planta" id="planta2"> <img src="img/flor2.png" alt="Planta 2"></div> <!--ubicación de archivos en carpeta img-->
+            <div class="planta" id="planta3"> <img src="img/flor3.png" alt="Planta 3"></div>
+            <div class="planta" id="planta4"> <img src="img/flor4.png" alt="Planta 4"></div>
+            <div class="planta" id="planta5"> <img src="img/flor5.png" alt="Planta 5"></div>
+            <div class="planta" id="planta6"> <img src="img/flor6.png" alt="Planta 6"></div>
+        </div>
+</div>
+
+	<div id="container2"> <!--Segundo contenedor donde irán las cosas a la derecha-->
+	
+		<p id="alinea"> <!--Le da un estilo al titulo del desplegable que aparece a continuación-->
+            
+			<b>Selecciona el numero de plantas a cultivar</b>
+			
+            <select id="desp1"> <!--Desplegable para seleccionar el número de plantas a cultivar-->
+				<option value="" selected disabled></option> <!--Obliga a que selecciones un número de plantas porque aparece en blanco-->
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+                <option value="4">Cuatro</option>
+                <option value="5">Cinco</option>
+                <option value="6">Seis</option>
+            </select>
+        </p>
+	
+        <button id="boton1" type="button">Iniciar</button> <!--Botón de inicio de crecimiento de plantas-->
+        <button id="boton2" type="button" style="display: none;">Replantar</button> <!--Botón que reinicia las plantas-->
+	
+	</div>
+	
+        <div id="tabla-container"> <!--Tercer contenedor para ubicar la tabla y los valores de su interior-->
+            <h3>Plantas Preferidas</h3> <!--Titulo tabla-->
+            <div id="tabla"></div> 
+        </div>	
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!--Llamada a la libreria de Jquery-->
+    <script type="text/javascript" src="Invernadero.js"></script> <!--Referencia al archivo donde tenemos el JS-->
+</body>
+
+</html>
